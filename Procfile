@@ -1,0 +1,1 @@
+web: gunicorn tarea3.wsgi --log-file -
