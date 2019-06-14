@@ -1,0 +1,45 @@
+<table style="width:100%">
+  <tr>
+      <th align = "left"> Nombre</th>
+      <th align = "left"> Año  </th>
+      <th align = "left"> Color ojos </th>
+      <th align = "left"> Peliculas </th>
+      <th align = "left"> Genero </th>
+      <th align = "left"> naves</th>
+      <th align = "left"> Color de pelo</th>
+      <th align = "left"> Altura </th>
+      <th align = "left"> Planeta </th>
+      <th align = "left"> Masa </th>
+      <th align = "left"> Creada </th>
+      <th align = "left"> Editada </th>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  	  <th align = "left"> {{infox2.name}} </th>
+      <th align = "left"> {{infox2.birthYear}} </th>
+      <th align = "left"> {{infox2.eyeColor}}  </th>
+      <th align = "left">{% for nombre,id in infox2.peliculas.items %}
+      	<a href="../peliculas/?id_={{id}}"> {{nombre}}</a>
+      	{% endfor %}
+      </th>
+      <th align = "left"> {{infox2.gender}} </th>
+      <th align = "left">{% for nombre,id in infox2.naves.items %}
+      	<a href="../naves/?id_={{id}}"> {{nombre}}</a>
+      	{% endfor %}
+      </th>
+	  <th align = "left"> {{infox2.hairColor}} </th>
+    <th align = "left"> {{infox2.height}} </th>
+      <th align = "left">{% for nombre,id in infox2.planetas.items %}
+        <a href="../planetas/?id_={{id}}"> {{nombre}}</a>
+        {% endfor %}
+      </th>
+
+
+    <th align = "left"> {{infox2.mass}} </th>
+
+	  <th align = "left"> {{infox2.created}} </th>
+	  <th align = "left"> {{infox2.edited}} </th>
+
+  </tr>
+</table>

@@ -1,0 +1,23 @@
+
+<h1>STAR  WARS </h1>
+
+<table style="width:100%">
+  <tr>
+      <th align = "left"> Titulo </th>
+      <th align = "left"> Lanzamiento  </th>
+      <th align = "left"> Director  </th>
+      <th align = "left"> Productor </th>
+      <th align = "left"> Numero  </th>
+  </tr>
+  <tr>
+  </tr>
+  {% for peli in pelis %}
+  <tr>
+      <th align = "left"> <a href="peliculas/?id_={{peli.id}}"> {{peli.title}}</a> </th>
+      <th align = "left"> {{peli.year}} </th>
+      <th align = "left"> {{peli.director}}  </th>
+      <th align = "left"> {{peli.productor}} </th>
+      <th align = "left"> {{peli.episodeID}} </th>
+  </tr>
+  {% endfor %}
+</table>

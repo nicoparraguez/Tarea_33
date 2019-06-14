@@ -1,0 +1,47 @@
+<table style="width:100%">
+  <tr>
+      <th align = "left"> Nombre </th>
+      <th align = "left"> Modelo  </th>
+      <th align = "left"> Clase  </th>
+      <th align = "left"> Manufacturadores </th>
+      <th align = "left"> Costo</th>
+      <th align = "left"> Peliculas</th>
+      <th align = "left"> Largo </th>
+      <th align = "left"> Pilotos</th>
+      <th align = "left"> Crew </th>
+      <th align = "left"> Pasajeros </th>
+      <th align = "left"> Rating </th>
+      <th align = "left"> Cargo </th>
+      <th align = "left"> Consumables </th>
+      <th align = "left"> Mglt </th>
+      <th align = "left"> Creada </th>
+      <th align = "left"> Editada </th>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  	  <th align = "left"> {{infox2.name}} </th>
+      <th align = "left"> {{infox2.model}} </th>
+      <th align = "left"> {{infox2.starshipClass}}  </th>
+      <th align = "left"> {{infox2.manufacturers}} </th>
+	    <th align = "left"> {{infox2.costInCredits}} </th>
+      <th align = "left">{% for nombre,id in infox2.peliculas.items %}
+        <a href="../peliculas/?id_={{id}}"> {{nombre}}</a>
+        {% endfor %}
+      </th>
+	    <th align = "left"> {{infox2.length}} </th>
+      <th align = "left">{% for nombre,id in infox2.personajes.items %}
+        <a href="../personajes/?id_={{id}}"> {{nombre}}</a>
+        {% endfor %}
+      </th>
+	    <th align = "left"> {{infox2.crew}} </th>
+      <th align = "left"> {{infox2.passengers}} </th>
+      <th align = "left"> {{infox2.hyperdriveRating}} </th>
+      <th align = "left"> {{infox2.MGLT}} </th>
+      <th align = "left"> {{infox2.cargoCapacity}} </th>
+      <th align = "left"> {{infox2.consumables}} </th>
+      <th align = "left"> {{infox2.created}} </th>
+      <th align = "left"> {{infox2.edited}} </th>
+
+  </tr>
+</table>

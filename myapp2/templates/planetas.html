@@ -1,0 +1,41 @@
+<table style="width:100%">
+  <tr>
+      <th align = "left"> Nombre </th>
+      <th align = "left"> Peliculas</th>
+      <th align = "left"> Diametro  </th>
+      <th align = "left"> Rotacion </th>
+      <th align = "left"> Orbital </th>
+      <th align = "left"> Gravedad</th>
+      <th align = "left"> Personajes</th>
+      <th align = "left"> poblacion </th>
+      <th align = "left"> clima</th>
+      <th align = "left"> jardines </th>
+      <th align = "left"> agua </th>
+      <th align = "left"> Creada </th>
+      <th align = "left"> Editada </th>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+  	  <th align = "left"> {{infox2.name}} </th>
+      <th align = "left">{% for nombre,id in infox2.peliculas.items %}
+        <a href="../peliculas/?id_={{id}}"> {{nombre}}</a>
+        {% endfor %}
+      </th>
+	    <th align = "left"> {{infox2.diameter}} </th>
+      <th align = "left"> {{infox2.rotationPeriod}} </th>
+      <th align = "left"> {{infox2.orbitalPeriod}} </th>
+      <th align = "left"> {{infox2.gravity}} </th>
+      <th align = "left">{% for nombre,id in infox2.personajes.items %}
+        <a href="../personajes/?id_={{id}}"> {{nombre}}</a>
+        {% endfor %}
+      </th>
+	    <th align = "left"> {{infox2.population}} </th>
+      <th align = "left"> {{infox2.climates}} </th>
+      <th align = "left"> {{infox2.terrains}} </th>
+      <th align = "left"> {{infox2.surfaceWater}} </th>
+      <th align = "left"> {{infox2.created}} </th>
+      <th align = "left"> {{infox2.edited}} </th>
+
+  </tr>
+</table>
